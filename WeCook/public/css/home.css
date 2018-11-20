@@ -1,0 +1,1287 @@
+@font-face {
+    font-family: "linux libetine";
+    src: url('../fonts/google Font/Slabo27px-Regular.ttf');
+}
+
+
+.card-list{
+    border: solid #DFDFDF 1px;
+    padding: 15px !important;
+}
+.card-list h3{
+    margin-top: 0!important;
+}
+.recette-detail{
+    padding: 15px !important;
+    border: solid #DFDFDF 1px;
+    height: 270px;
+}
+.recette-link{
+    width: 100%;
+    background-color: #DFDFDF;
+    margin:  0 0!important;
+    padding: 15px;
+
+}
+
+.dont{
+    display: none !important;
+}
+.avantages-abonnes hr{
+    border: solid black 2px;
+    width: 12px;
+    border-radius: 30%;
+    display: block;
+    position: absolute;
+}
+hr.home {
+    position: relative;
+    top: -55px;
+    border: solid black 2px;
+}
+h2.home {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding: 15px;
+}
+html,body{
+    background-color: white !important;
+}
+footer{
+    margin-top: 30px;
+}
+a h1, a h2, a h3, a h4{
+    color: black;
+    text-decoration: none;
+}
+span.blue{
+    color: #488dd8;
+}
+.menu-title{
+    color: #488dd8;
+}
+a h1:hover, a h2:hover, a h3:hover, a h4:hover{
+    color: #488dd8;
+    text-underline-color: transparent !important;
+    transition: 1s;
+    text-underline: none !important;
+}
+.nav li a:hover{
+    background-color: #488dd8;
+    color: white;
+    transition: 0.1s;
+}
+
+.navbar-default{
+    position: fixed;
+    top: 0;
+    z-index: 1000000;
+    width: 100%;
+}
+.navbar-default ul li a{
+    font-size: 18px;
+    transition: 0.5s;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.navbar-toggle{
+    position: absolute;
+    right: 0;
+}
+.nav-header{
+    display: table;
+}
+
+
+.avantages-abonnes h2{
+    padding: 30px 30px;
+}
+
+@media (min-width: 768px) {
+    .menu-title{
+        font-size: 22px;
+    }
+    .panel{
+        padding-top: 30px;
+    }
+    .nav-header .navbar-brand{
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        padding: 20px;
+    }
+    .navbar-header .navbar-brand{
+        font-size: 35px;
+        transition: 0.6s;
+    }
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    .nav-header{
+        display: block;
+    }
+}
+
+.menu-link ul li a{
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+p, h1, h2, h3, h4, h5, h6, span, a, button, input{
+    font-family: "linux libetine";
+}
+
+
+
+
+li.active a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    text-underline: none!important;
+    border: solid #488dd8 3px;
+    font-weight: 600;
+}
+li a.unload-filter{
+    background-color: #b80000;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    text-underline: none!important;
+    font-weight: 600;
+}
+
+
+li.a :hover{
+    transition: 1s !important;
+}
+
+.panel{
+    margin-top: 120px;
+}
+
+/* Effect 1: YouTube loading */
+.la-anim-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    background: #ed4e6e;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    pointer-events: none;
+}
+
+.la-anim-1::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: #ed4e6e;
+    box-shadow: 0 0 15px #ed4e6e, 0 0 5px #ed4e6e;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, box-shadow 2s 4s;
+    transition: opacity 0.2s, box-shadow 2s 4s;
+    -webkit-transform: rotate(2deg) translateY(-2px);
+    transform: rotate(2deg) translateY(-2px);
+}
+
+.la-anim-1.la-animate {
+    z-index: 10000000000;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 5s ease-in, opacity 1s 5s;
+    transition: transform 5s ease-in, opacity 1s 5s;
+    -webkit-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.la-anim-1.la-animate::after {
+    box-shadow: 0 0 3px #ed4e6e, 0 0 1px #ed4e6e;
+    opacity: 1;
+}
+
+
+.greyBack{
+    padding: 5px 5px;
+    background-color: #488dd8;
+    color: white;
+    font-weight: 600;
+}
+
+/* Common style */
+.grid {
+    margin: 40px auto 120px;
+    width: 100%;
+}
+
+.grid a {
+    float: left;
+    max-width: 250px;
+    width: 25%;
+    color: #333;
+}
+
+.grid a:nth-child(odd) {
+    margin: 30px 0 -30px 0;
+}
+
+.grid figure {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    background: #333;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    width: 100%;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.grid figcaption {
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.ui-helper-hidden-accessible{
+    display: none;
+}
+
+.grid figcaption h2 {
+    margin: 0 0 20px 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 130%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+.grid2 figcaption h2 {
+    margin: 0 0 20px 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 130%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.grid figcaption p {
+    padding: 0 20px;
+    color: #aaa;
+    font-weight: 300;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+.grid2 figcaption p {
+    padding: 0 20px;
+    color: white;
+    font-weight: 300;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption h2,
+.grid figcaption p {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+}
+
+.grid figure button {
+    position: absolute;
+    padding: 4px 20px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption p,
+.grid figure button {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Style for SVG */
+.grid svg {
+    position: absolute;
+    top: -1px; /* fixes rendering issue in FF */
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.grid svg path {
+    fill: #fff;
+}
+.grid2 svg path {
+    fill: white;
+}
+.grid2 a, .grid2 p, .grid2 h2{
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effects */
+.grid a:hover figure img {
+    opacity: 1;
+}
+
+.grid a:hover figcaption h2,
+.grid a:hover figcaption p {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.grid a:hover figcaption p {
+    opacity: 0;
+}
+
+/* Individual styles */
+.demo-1 body {
+    background: #3498db;
+}
+
+.grid figure button {
+    top: 50%;
+    left: 50%;
+    border: 3px solid #fff;
+    background: transparent;
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+    transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
+
+ .grid a:hover figure button,
+.demo-3 .grid a:hover figure button {
+    opacity: 1;
+    -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+    transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+.demo-2 body {
+    background: #e74c3c;
+}
+
+.demo-2 .grid figcaption h2 {
+    color: #e74c3c;
+}
+
+.demo-2 .grid figcaption p {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+.demo-2 .grid figure button {
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    width: 100%;
+    background: #fff;
+    color: #333;
+    font-weight: 300;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.demo-2 .grid a:hover figure button {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.demo-2 .grid figcaption h2,
+.demo-2 .grid figcaption p,
+.demo-3 .grid figcaption h2,
+.demo-3 .grid figcaption p {
+    -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1); /* older webkit */
+    -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+    timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+}
+
+.demo-2 .grid a:hover figcaption p,
+.demo-3 .grid a:hover figcaption p {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+.demo-3 body {
+    background: #52be7f;
+}
+
+.demo-3 .grid figcaption h2 {
+    color: #52be7f;
+}
+
+.demo-3 .grid a:hover figcaption h2 {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+/* Media Queries */
+/* Let's redefine the width of each anchor and the margins */
+
+@media screen and (max-width: 58em) {
+    .grid a {
+        width: 33.333%;
+    }
+
+    .grid a:nth-child(odd) {
+        margin: 0;
+    }
+
+    .grid a:nth-child(3n-1) {
+        margin: 30px 0 -30px 0;
+    }
+}
+
+@media screen and (max-width: 45em) {
+    .grid {
+        max-width: 500px;
+    }
+
+    .grid a {
+        width: 50%;
+    }
+
+    .grid a:nth-child(3n-1) {
+        margin: 0;
+    }
+
+    .grid a:nth-child(even) {
+        margin: 30px 0 -30px 0;
+    }
+
+
+    .grid figcaption h2 {
+        margin-bottom: 0px;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+
+    .grid figcaption p {
+        margin: 0;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 27em) {
+    .grid {
+        max-width: 250px;
+    }
+
+    .grid a {
+        width: 100%;
+    }
+
+    .grid a:nth-child(even) {
+        margin: 0;
+    }
+    .btn-display{
+       display: none;
+    }
+}
+.modal-open {
+    padding-right: 0px !important;
+    z-index: 1000000;
+}
+
+
+@media screen and (min-width: 320px) {
+    .modal-dialog{
+        min-width: 310px;
+    }
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
+        padding: 0 0 !important;
+    }
+}
+@media screen and (min-width: 560px) {
+    .modal-dialog{
+        min-width: 550px;
+    }
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
+        padding: 0 0 !important;
+    }
+}
+@media screen and (max-width: 560px) {
+   .type{
+       position: absolute;
+       right:20%;
+   }
+    .top15{
+        top:15px;
+        position: relative;
+    }
+    .each{
+        min-height: 120px;
+    }
+}
+@media screen and (min-width: 760px) {
+    .modal-dialog{
+        min-width: 750px;
+    }
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
+        padding: 0 0 !important;
+    }
+}
+@media screen and (min-width: 960px) {
+    .modal-dialog{
+        min-width: 950px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-dialog{
+        min-width: 1190px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .modal-dialog{
+        min-width: 1390px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'nlicons';
+    src:url('../fonts/nlicons/nlicons.eot');
+    src:url('../fonts/nlicons/nlicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/nlicons/nlicons.woff') format('woff'),
+    url('../fonts/nlicons/nlicons.ttf') format('truetype'),
+    url('../fonts/nlicons/nlicons.svg#nlicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* general style for the form */
+.nl-form {
+    width: 100%;
+    margin: 0.3em auto 0 auto;
+    font-size: 4em;
+    line-height: 1.5;
+}
+
+.nl-form ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* normalize the input elements, make them look like everything else */
+.nl-form input,
+.nl-form select,
+.nl-form button {
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.nl-form input:focus {
+    outline: none;
+}
+
+/* custom field (drop-down, text element) styling  */
+.nl-field {
+    display: inline-block;
+    position: relative;
+}
+
+.nl-field.nl-field-open {
+    z-index: 10000;
+}
+
+/* the toggle is the visible part in the form */
+.nl-field-toggle,
+.nl-form input,
+.nl-form select  {
+    line-height: inherit;
+    display: inline-block;
+    color: #b14943;
+    cursor: pointer;
+    border-bottom: 1px dashed #b14943;
+}
+
+/* drop-down list / text element */
+.nl-field ul {
+    position: absolute;
+    visibility: hidden;
+    background: #76C3BD;
+    left: -0.5em;
+    top: 50%;
+    font-size: 80%;
+    opacity: 0;
+    -webkit-transform: translateY(-40%) scale(0.9);
+    -moz-transform: translateY(-40%) scale(0.9);
+    transform: translateY(-40%) scale(0.9);
+    -webkit-transition: visibility 0s 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: visibility 0s 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: visibility 0s 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+.nl-field.nl-field-open ul {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    -webkit-transition: visibility 0s 0s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: visibility 0s 0s, opacity 0.3s, -moz-transform 0.3s;
+    transition: visibility 0s 0s, opacity 0.3s, transform 0.3s;
+}
+
+.nl-field ul li {
+    color: #fff;
+    position: relative;
+}
+
+.nl-dd ul li {
+    padding: 0 1.5em 0 0.5em;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.nl-dd ul li.nl-dd-checked {
+    color: #478982;
+}
+
+.no-touch .nl-dd ul li:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.no-touch .nl-dd ul li:hover:active {
+    color: #478982;
+}
+
+/* icons for some elements */
+.nl-dd ul li.nl-dd-checked:before,
+.nl-submit:before,
+.nl-field-go:before {
+    font-family: 'nlicons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.nl-dd ul li.nl-dd-checked:before {
+    content: "\e000";
+    position: absolute;
+    right: 1em;
+    font-size: 50%;
+    line-height: 3;
+}
+
+.nl-ti-text ul {
+    min-width: 8em;
+}
+
+.nl-ti-text ul li.nl-ti-input input {
+    width: 100%;
+    padding: 0.2em 2em 0.2em 0.5em;
+    border-bottom: none;
+    color: #fff;
+}
+
+.nl-form .nl-field-go {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+    background: rgba(0,0,0,0.1);
+    width: 1.8em;
+    text-align: center;
+    color: transparent;
+}
+
+.nl-field-go:before {
+    content: "\e001";
+    font-size: 75%;
+    color: #fff;
+    width: 100%;
+    line-height: 2.5;
+    display: block;
+}
+
+/* custom placeholder color */
+input::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.8);
+}
+
+input:active::-webkit-input-placeholder ,
+input:focus::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.2);
+}
+
+input::-moz-placeholder {
+    color: rgba(255,255,255,0.8);
+}
+
+input:active::-moz-placeholder,
+input:focus::-moz-placeholder {
+    color: rgba(255,255,255,0.2);
+}
+
+input:-ms-input-placeholder {
+    color: rgba(255,255,255,0.8);
+}
+
+input:active::-ms-input-placeholder ,
+input:focus::-ms-input-placeholder {
+    color: rgba(255,255,255,0.2);
+}
+
+/* example field below text input */
+.nl-ti-text ul li.nl-ti-example {
+    font-size: 40%;
+    font-style: italic;
+    font-weight: 400;
+    padding: 0.4em 1em;
+    color: rgba(0,0,0,0.2);
+    border-top: 1px dashed rgba(255,255,255,0.7);
+}
+
+.nl-ti-text ul li.nl-ti-example em {
+    color: #fff
+}
+
+/* submit button */
+.nl-submit-wrap {
+    margin-top: 0.4em;
+}
+
+.nl-form .nl-submit {
+    line-height: 3;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    background: #76C3BD;
+    color: #fff;
+    padding: 0 1em 0 0;
+    font-size: 40%;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nl-submit:before {
+    content: "\e001";
+    color: #fff;
+    float: left;
+    padding: 0 0.7em;
+    margin: 0 0.8em 0 0;
+    background: #69B1A9;
+}
+
+.no-touch .nl-form .nl-submit:hover,
+.no-touch .nl-form .nl-submit:active {
+    background: #69B1A9;
+}
+
+.no-touch .nl-form .nl-submit:hover:before {
+    background: #58a199;
+}
+
+/* overlay becomes visible when a field is opened */
+.nl-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    z-index: 9999;
+    visibility: hidden;
+    -webkit-transition: visibility 0s 0.3s, opacity 0.3s;
+    -moz-transition: visibility 0s 0.3s, opacity 0.3s;
+    transition: visibility 0s 0.3s, opacity 0.3s;
+}
+
+.nl-field.nl-field-open ~ .nl-overlay {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+@media screen and (max-width: 45em) {
+    .nl-form {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 25em) {
+    .nl-form {
+        font-size: 2em;
+    }
+}
+
+
+
+
+#searchEntre, #searchPlats, #searchDesserts, #searchBoissons, #searchPatisseries, #searchIngredients{
+    min-height: 50px;
+    font-size: 20px;
+}
+
+
+
+.rotate{
+    -ms-transform: rotate(7deg)!important; /* IE 9 */
+    -webkit-transform: rotate(7deg)!important; /* Chrome, Safari, Opera */
+    transform: rotate(7deg) !important;
+}
+
+.loading{
+    position: absolute;
+    z-index: 100000;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+.do p {
+    padding: 5px;
+}
+
+
+.left-bar{
+    padding: 5px 5px!important;
+    margin-top: 15px;
+}
+.left-bar h4{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    border-bottom: solid black 1px;
+}
+.left-bar button{
+    width: 100%;
+    color: black;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+    background-color: rgba(0,0,0,.05);
+    border-radius: 0;
+}
+h4.filter{
+    width: 100%;
+    background-color: #488dd8;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    border-bottom: solid black 1px;
+    border-top: solid black 1px;
+    text-align: center;
+}
+
+
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    max-width: 480px;
+    max-height: 360px;
+    width: 31%;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+
+
+
+
+
+
+/*---------------*/
+/***** Romeo *****/
+/*---------------*/
+
+figure.effect-romeo {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+figure.effect-romeo img {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,0,300px);
+    transform: translate3d(0,0,300px);
+}
+
+figure.effect-romeo:hover img {
+    opacity: 0.6;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-romeo figcaption::before,
+figure.effect-romeo figcaption::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+
+figure.effect-romeo:hover figcaption::before {
+    opacity: 0.5;
+    -webkit-transform: translate3d(-50%,-50%,0) rotate(45deg);
+    transform: translate3d(-50%,-50%,0) rotate(45deg);
+}
+
+figure.effect-romeo:hover figcaption::after {
+    opacity: 0.5;
+    -webkit-transform: translate3d(-50%,-50%,0) rotate(-45deg);
+    transform: translate3d(-50%,-50%,0) rotate(-45deg);
+}
+
+figure.effect-romeo h2,
+figure.effect-romeo p {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.effect-romeo h2 {
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+    transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+}
+
+figure.effect-romeo p {
+    padding: 0.25em 2em;
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+    transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+}
+
+figure.effect-romeo:hover h2 {
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+    transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+}
+
+figure.effect-romeo:hover p {
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+    transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+}
+
+.ui-autocomplete { position: absolute; cursor: default; }
+.ui-autocomplete-loading { background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat; }
+
+
+.ui-autocomplete { width:1px; }
+
+/* CSS used here will be applied after bootstrap.css */
+.nav { margin-bottom: 0; }
+.nav > li.dropdown.open { position: static; }
+.nav > li.dropdown.open .dropdown-menu {display:table; width: 100%; text-align: center; left:0; right:0; }
+
+.ui-menu {
+    list-style:none;
+    padding: 10px;
+    font-size: 25px;
+    z-index: 10000000000000000;
+    margin: 0;
+    display:block;
+    background-color: white;
+}
+
+.ui-menu .ui-menu {
+    margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+    margin:0;
+    padding: 0;
+}
+.ui-menu .ui-menu-item:hover {
+    margin:0;
+    padding: 0;
+    background-color: lightgray;
+}
+.ui-menu .ui-menu-item a {
+    text-decoration:none;
+    display:block;
+    padding:.2em .4em;
+    line-height:1.5;
+    zoom:1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    margin: -1px;
+}
+
+input.form-control {
+    border-radius: 0;
+    border: solid #488dd8 1px;
+}
+
+.panel-heading, .panel-default{
+    border-color: transparent;
+}
+hr{
+    border-color: black;
+}
+
+.sk-folding-cube {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+    animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+    transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+    transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+    transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    } 25%, 75% {
+          -webkit-transform: perspective(140px) rotateX(0deg);
+          transform: perspective(140px) rotateX(0deg);
+          opacity: 1;
+      } 90%, 100% {
+            -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+            opacity: 0;
+        }
+}
+
+@keyframes sk-foldCubeAngle {
+    0%, 10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    } 25%, 75% {
+          -webkit-transform: perspective(140px) rotateX(0deg);
+          transform: perspective(140px) rotateX(0deg);
+          opacity: 1;
+      } 90%, 100% {
+            -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+            opacity: 0;
+        }
+}
+
+
